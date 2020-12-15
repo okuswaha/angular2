@@ -1,0 +1,24 @@
+<div>
+<label>Product Id</label>
+<input type="text" name="product.productId" [(ngModel)]="product.productId"/><br/>
+<label>SKU </label>
+<input type="text" name="product.sku" [(ngModel)]="product.sku"/><br/>
+<label>Product Name</label>
+<input type="text" name="product.productName" [(ngModel)]="product.productName"/><br/>
+<label>Product Description</label>
+<input type="text" name="product.productDesc" [(ngModel)]="product.productDesc"/><br/>
+<label>Category Id</label>
+<input type="text" name="product.categoryId" [(ngModel)]="product.categoryId"/><br/>
+</div>
+
+<h1>Products Details</h1>
+<div *ngFor = "let product of products">
+	<hr/>
+	<p>Product Id : {{product.productId}}</p>
+	<p>SKU : {{product.sku}}</p>
+	<p>Product Name : {{product.productName}}</p>
+	<p>Product Description : {{product.productDesc}}</p>
+	<p>Category Id : {{product.categoryId}}</p>
+	<p>Unit Price : {{product.unitPrice}}</p>
+	<hr/>
+</div>
